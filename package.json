@@ -9,8 +9,9 @@
     "node": ">= 4"
   },
   "scripts": {
-    "pretest": "eslint lib/ tests/",
-    "test": "mocha tests/**/*.js"
+    "pretest": "eslint lib/ tests/ build/",
+    "test": "mocha tests/**/*.js",
+    "prepare-release": "npm test && node build/release.js"
   },
   "files": [
     "lib/es2015.js",
@@ -36,6 +37,8 @@
     "dirty-chai": "^1.2.2",
     "eslint": "^3.9.1",
     "eslint-plugin-node": "^3.0.3",
-    "mocha": "^3.1.2"
+    "mocha": "^3.1.2",
+    "moment": "^2.15.2",
+    "semver": "^5.3.0"
   }
 }
