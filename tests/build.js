@@ -10,7 +10,7 @@ function exec (command) {
 }
 
 function getLatestCommitMessage () {
-  return exec('git --no-pager show -s --oneline --format="%B" HEAD');
+  return exec('git --no-pager show -s --oneline --format="%s" HEAD').slice(0, -1);
 }
 
 describe('build', () => {
