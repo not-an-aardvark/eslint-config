@@ -47,7 +47,12 @@ function replaceIssueLinks (message) {
   return message.replace(/#(\d+)/g, `[#$1](${githubRepoUrl}/issues/$1)`);
 }
 
-const commitHashes = exec(`git log --format=%H v${packageFile.version}...HEAD`).split('\n');
+const commitHashes = exec(`git log --format=%H v${packageFile.version}...HEAD`).split('\n').filter(hash => hash);
+
+if (!commitHashes.length) {
+  throw new RangeError('No commits since last release');
+}
+
 const commitSubjects = commitHashes.map(getCommitSubject);
 let newVersion;
 
