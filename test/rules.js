@@ -11,7 +11,7 @@ const CORE_RULES = fs.readdirSync(RULES_DIR)
   .map(fileName => path.basename(fileName, '.js'))
   .reduce((rules, ruleName) => Object.assign(rules, {[ruleName]: require(path.join(RULES_DIR, ruleName))}), {});
 
-describe('eslint-config-not-an-aardvark', () => {
+describe('rules', () => {
   it('has no nonexistent rules', () => {
     Object.keys(config.rules).forEach(ruleName => {
       expect(CORE_RULES).to.have.ownProperty(ruleName, `The ${ruleName} rule does not exist.`);
@@ -26,9 +26,5 @@ describe('eslint-config-not-an-aardvark', () => {
     Object.keys(config.rules).forEach(ruleName => {
       configValidator.validateRuleOptions(ruleName, config.rules[ruleName], 'node.js');
     });
-  });
-  it('points to a file that exists', () => {
-    const mainFile = path.join(__dirname, '..', require('../package.json').main);
-    expect(fs.existsSync(mainFile)).to.be.true(`The main file ${mainFile} does not exist.`);
   });
 });
