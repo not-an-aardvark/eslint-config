@@ -27,4 +27,8 @@ describe('eslint-config-not-an-aardvark', () => {
       configValidator.validateRuleOptions(ruleName, config.rules[ruleName], 'node.js');
     });
   });
+  it('points to a file that exists', () => {
+    const mainFile = path.join(__dirname, '..', require('../package.json').main);
+    expect(fs.existsSync(mainFile)).to.be.true(`The main file ${mainFile} does not exist.`);
+  });
 });

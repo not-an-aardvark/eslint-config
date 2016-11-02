@@ -4,7 +4,7 @@
   "description": "not-an-aardvark's shareable ESLint config",
   "author": "Teddy Katz",
   "license": "MIT",
-  "main": "index.js",
+  "main": "es2015.js",
   "engines": {
     "node": ">= 4"
   },
