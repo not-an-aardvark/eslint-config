@@ -13,8 +13,8 @@
     "test": "mocha tests/**/*.js"
   },
   "files": [
-    "es2015.js",
-    "es5.js"
+    "lib/es2015.js",
+    "lib/es5.js"
   ],
   "repository": {
     "type": "git",

@@ -15,9 +15,14 @@ function getLatestCommitMessage () {
 
 describe('build', () => {
   describe('package.json', () => {
-    it('points to a file that exists', () => {
+    it('points to a `main` file that exists', () => {
       const mainFile = path.join(__dirname, '..', require('../package.json').main);
       expect(fs.existsSync(mainFile)).to.be.true(`The main file ${mainFile} does not exist.`);
+    });
+    it('has a `files` array that points to existing files', () => {
+      require('../package.json').files.map(relativePath => path.join(__dirname, '..', relativePath)).forEach(absPath => {
+        expect(fs.existsSync(absPath)).to.be.true(`package.json lists a nonexistent file ${absPath}`);
+      });
     });
   });
   describe('commit message', () => {
