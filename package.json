@@ -4,13 +4,13 @@
   "description": "not-an-aardvark's shareable ESLint config",
   "author": "Teddy Katz",
   "license": "MIT",
-  "main": "es2015.js",
+  "main": "lib/es2015.js",
   "engines": {
     "node": ">= 4"
   },
   "scripts": {
-    "pretest": "eslint '*.js' 'test/**/*.js'",
-    "test": "mocha test/**/*.js"
+    "pretest": "eslint lib/ test/",
+    "test": "mocha tests/**/*.js"
   },
   "files": [
     "es2015.js",
