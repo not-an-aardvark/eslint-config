@@ -11,7 +11,7 @@
   "scripts": {
     "pretest": "eslint lib/ tests/ build/",
     "test": "mocha tests/**/*.js",
-    "prepare-release": "npm test && node build/release.js"
+    "prepare-release": "rm -rf node_modules && npm install && npm test && node build/release.js"
   },
   "files": [
     "lib/es2015.js",
