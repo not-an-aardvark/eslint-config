@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-not-an-aardvark",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "not-an-aardvark's shareable ESLint config",
   "author": "Teddy Katz",
   "license": "MIT",
