@@ -1,5 +1,9 @@
 env:
   node: true
-extends: './es2015.js'
+extends:
+  - ./es2015.js
+  - plugin:node/recommended
+plugins:
+  - node
 rules:
   sort-keys: error
