@@ -1,0 +1,5 @@
+env:
+  node: true
+extends: './es2015.js'
+rules:
+  sort-keys: error
