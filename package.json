@@ -9,7 +9,7 @@
     "node": ">= 4"
   },
   "scripts": {
-    "pretest": "eslint lib/ test/",
+    "pretest": "eslint lib/ tests/",
     "test": "mocha tests/**/*.js"
   },
   "files": [
