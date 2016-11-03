@@ -15,7 +15,7 @@ function exec (command) {
 
 const githubRepoUrl = exec('git config --get remote.origin.url').replace(/\.git$/, '');
 
-function writePackageJson (version) {
+function updatePackageJson (version) {
   fs.writeFileSync(PACKAGE_JSON_PATH, JSON.stringify(Object.assign({}, packageFile, {version}), null, 2) + '\n');
 }
 
@@ -69,7 +69,7 @@ const commitLines = commitHashes.map(hash => `* ${replaceIssueLinks(getCommitSub
 const oldChangelog = fs.readFileSync(CHANGELOG_PATH).toString();
 const newChangelog = oldChangelog.replace(/^(# Changelog\n\n)/, `$1${newChangelogHeader}\n\n${commitLines.join('\n')}\n\n`);
 
-writePackageJson(newVersion);
+updatePackageJson(newVersion);
 updateChangelog(newChangelog);
 createGitCommit(newVersion);
 createGitTag(newVersion);
