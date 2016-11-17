@@ -1,5 +1,5 @@
 extends:
-  - ./lib/node.js
+  - ./node.js
   - plugin:node/recommended
 plugins:
   - node

@@ -4,7 +4,7 @@
   "description": "not-an-aardvark's shareable ESLint config",
   "author": "Teddy Katz",
   "license": "MIT",
-  "main": "lib/es2015.js",
+  "main": "es2015.js",
   "engines": {
     "node": ">= 4"
   },
@@ -14,9 +14,9 @@
     "prepare-release": "rm -rf node_modules && npm install && npm test && node build/release.js"
   },
   "files": [
-    "lib/es2015.js",
-    "lib/es5.js",
-    "lib/node.js"
+    "es2015.js",
+    "es5.js",
+    "node.js"
   ],
   "repository": {
     "type": "git",
