@@ -1,7 +1,5 @@
-env:
-  node: true
 extends:
-  - ./lib/es2015.js
+  - ./lib/node.js
   - plugin:node/recommended
 plugins:
   - node
