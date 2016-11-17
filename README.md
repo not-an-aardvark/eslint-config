@@ -23,7 +23,15 @@ Add the following to your `.eslintrc.json` file:
 }
 ```
 
-Or alternatively, for projects that don't use ES2015:
+For Node.js projects:
+
+```json
+{
+  "extends": ["not-an-aardvark/node"]
+}
+```
+
+For projects that don't use ES2015:
 
 ```json
 {
