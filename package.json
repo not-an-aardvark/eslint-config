@@ -15,7 +15,8 @@
   },
   "files": [
     "lib/es2015.js",
-    "lib/es5.js"
+    "lib/es5.js",
+    "lib/node.js"
   ],
   "repository": {
     "type": "git",
