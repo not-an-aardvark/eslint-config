@@ -33,6 +33,9 @@ describe('build', () => {
     it('starts with a valid prefix', () => {
       const latestCommit = getLatestCommitMessage();
       const PREFIXES = ['Fix:', 'Update:', 'New:', 'Breaking:', 'Docs:', 'Build:', 'Upgrade:', 'Chore:'];
+      if (process.env.CI) {
+        PREFIXES.push('chore'); // This prevents greenkeeper's builds from always failing CI
+      }
       expect(
         PREFIXES.some(prefix => latestCommit.startsWith(prefix))
       ).to.be.true(`Commit message must start with one of ${PREFIXES.join(', ')}`);
