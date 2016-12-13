@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  env: {es6: false},
+  env: { es6: false },
   extends: './es2015.js',
   rules: {
     'no-inner-declarations': ['error', 'functions'],

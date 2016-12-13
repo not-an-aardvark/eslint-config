@@ -9,7 +9,7 @@ const RULES_DIR = path.join(__dirname, '../node_modules/eslint/lib/rules/');
 const CORE_RULES = fs.readdirSync(RULES_DIR)
   .filter(fileName => fileName.endsWith('.js'))
   .map(fileName => path.basename(fileName, '.js'))
-  .reduce((rules, ruleName) => Object.assign(rules, {[ruleName]: require(path.join(RULES_DIR, ruleName))}), {});
+  .reduce((rules, ruleName) => Object.assign(rules, { [ruleName]: require(path.join(RULES_DIR, ruleName)) }), {});
 
 describe('rules', () => {
   it('has no nonexistent rules', () => {

@@ -16,7 +16,7 @@ function exec (command) {
 const githubRepoUrl = exec('git config --get remote.origin.url').replace(/\.git$/, '');
 
 function updatePackageJson (version) {
-  fs.writeFileSync(PACKAGE_JSON_PATH, JSON.stringify(Object.assign({}, packageFile, {version}), null, 2) + '\n');
+  fs.writeFileSync(PACKAGE_JSON_PATH, JSON.stringify(Object.assign({}, packageFile, { version }), null, 2) + '\n');
 }
 
 function updateChangelog (newText) {

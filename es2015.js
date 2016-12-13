@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-  env: {es6: true},
+  env: { es6: true },
   extends: ['eslint:recommended'],
   root: true,
   rules: {
@@ -23,9 +23,9 @@ module.exports = {
     eqeqeq: 'error',
     'func-call-spacing': 'error',
     indent: ['error', 2, {
-      CallExpression: {arguments: 1},
-      FunctionDeclaration: {body: 1, parameters: 1},
-      FunctionExpression: {body: 1, parameters: 1},
+      CallExpression: { arguments: 1 },
+      FunctionDeclaration: { body: 1, parameters: 1 },
+      FunctionExpression: { body: 1, parameters: 1 },
       MemberExpression: 1,
       SwitchCase: 1,
     }],
@@ -44,7 +44,7 @@ module.exports = {
     'no-eval': 'error',
     'no-extra-bind': 'error',
     'no-extra-label': 'error',
-    'no-extra-parens': ['error', 'all', {nestedBinaryExpressions: false}],
+    'no-extra-parens': ['error', 'all', { nestedBinaryExpressions: false }],
     'no-floating-decimal': 'error',
     'no-global-assign': 'error',
     'no-implied-eval': 'error',
@@ -61,7 +61,7 @@ module.exports = {
     'no-process-exit': 'error',
     'no-proto': 'error',
     'no-prototype-builtins': 'error',
-    'no-restricted-properties': ['error', {object: 'describe', property: 'only'}, {object: 'it', property: 'only'}],
+    'no-restricted-properties': ['error', { object: 'describe', property: 'only' }, { object: 'it', property: 'only' }],
     'no-script-url': 'error',
     'no-self-compare': 'error',
     'no-sequences': 'error',
@@ -83,7 +83,7 @@ module.exports = {
     'no-void': 'error',
     'no-whitespace-before-property': 'error',
     'no-with': 'error',
-    'object-curly-spacing': 'error',
+    'object-curly-spacing': ['error', 'always'],
     'object-shorthand': 'error',
     'operator-assignment': 'error',
     'padded-blocks': ['error', 'never'],
@@ -105,7 +105,7 @@ module.exports = {
     strict: ['error', 'global'],
     'template-curly-spacing': 'error',
     'unicode-bom': 'error',
-    'valid-typeof': ['error', {requireStringLiterals: true}],
+    'valid-typeof': ['error', { requireStringLiterals: true }],
     'wrap-iife': 'error',
     yoda: 'error',
   },
