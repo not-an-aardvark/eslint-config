@@ -1,5 +1,13 @@
 # Changelog
 
+## v2.0.0 (2016-12-13)
+
+* Breaking: enable object-curly-spacing: always ([e9d6589](https://github.com/not-an-aardvark/eslint-config/commit/e9d65898ed52cab34c9f0ad2aef7c55e70cafdb5))
+* Breaking: enable comma-dangle: always-multiline ([aaede69](https://github.com/not-an-aardvark/eslint-config/commit/aaede69cecf10d0707808aa773e39e37b3a43efe))
+* Chore: add an npm script to run the linter ([763fe8b](https://github.com/not-an-aardvark/eslint-config/commit/763fe8b52912647b8065919f9ac22927ba1279d5))
+* Chore: lint all the files in the package ([77a9a42](https://github.com/not-an-aardvark/eslint-config/commit/77a9a42bee075175b06ebf8d5b7bd851f72a5870))
+* Docs: document the node-specific config ([daf8770](https://github.com/not-an-aardvark/eslint-config/commit/daf877011258d7a25ff3514a1c3e12a264fb0aff))
+
 ## v1.1.0 (2016-11-17)
 
 * Update: move files out of the lib/ folder for easier require() access ([2c97ed5](https://github.com/not-an-aardvark/eslint-config/commit/2c97ed5b89ff97acc846472deb44c6307495b5f5))
