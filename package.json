@@ -9,7 +9,8 @@
     "node": ">= 4"
   },
   "scripts": {
-    "pretest": "eslint .",
+    "lint": "eslint .",
+    "pretest": "npm run lint",
     "test": "mocha tests/**/*.js",
     "prepare-release": "rm -rf node_modules && npm install && npm test && node build/release.js"
   },
