@@ -10,6 +10,6 @@ module.exports = {
     'prefer-arrow-callback': 'off',
     'prefer-numeric-literals': 'off',
     'prefer-rest-params': 'off',
-    'prefer-spread': 'off'
-  }
+    'prefer-spread': 'off',
+  },
 };

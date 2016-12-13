@@ -12,7 +12,7 @@ module.exports = {
     'arrow-spacing': 'error',
     'block-spacing': ['error', 'never'],
     'brace-style': 'error',
-    'comma-dangle': 'error',
+    'comma-dangle': ['error', 'always-multiline'],
     'comma-spacing': 'error',
     'comma-style': 'error',
     'computed-property-spacing': 'error',
@@ -27,7 +27,7 @@ module.exports = {
       FunctionDeclaration: {body: 1, parameters: 1},
       FunctionExpression: {body: 1, parameters: 1},
       MemberExpression: 1,
-      SwitchCase: 1
+      SwitchCase: 1,
     }],
     'key-spacing': 'error',
     'keyword-spacing': 'error',
@@ -107,6 +107,6 @@ module.exports = {
     'unicode-bom': 'error',
     'valid-typeof': ['error', {requireStringLiterals: true}],
     'wrap-iife': 'error',
-    yoda: 'error'
-  }
+    yoda: 'error',
+  },
 };
