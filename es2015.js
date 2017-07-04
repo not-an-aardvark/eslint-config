@@ -33,7 +33,6 @@ module.exports = {
     'keyword-spacing': 'error',
     'linebreak-style': ['error', 'unix'],
     'lines-around-directive': 'error',
-    'max-len': ['error', 128, { ignoreComments: true }],
     'max-statements-per-line': 'error',
     'new-parens': 'error',
     'no-caller': 'error',
