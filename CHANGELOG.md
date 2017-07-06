@@ -1,5 +1,11 @@
 # Changelog
 
+## v2.1.0 (2017-07-06)
+
+* Update: disable max-len ([#5](https://github.com/not-an-aardvark/eslint-config/issues/5)) ([aea6fa5](https://github.com/not-an-aardvark/eslint-config/commit/aea6fa5388ddb6b84821f70008265c5b12af2c38))
+* Chore: update build script to use process.cwd() ([c4518a7](https://github.com/not-an-aardvark/eslint-config/commit/c4518a7a61eb25d23f2d89aa1ccccaf3b9f5027c))
+* Upgrade: update eslint-plugin-node to version 4.0.1 ([#2](https://github.com/not-an-aardvark/eslint-config/issues/2)) ([ebfa673](https://github.com/not-an-aardvark/eslint-config/commit/ebfa6736468a809f2537fe13836a9a93774903dc))
+
 ## v2.0.0 (2016-12-13)
 
 * Breaking: enable object-curly-spacing: always ([e9d6589](https://github.com/not-an-aardvark/eslint-config/commit/e9d65898ed52cab34c9f0ad2aef7c55e70cafdb5))
